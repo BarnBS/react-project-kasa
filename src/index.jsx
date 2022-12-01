@@ -12,10 +12,14 @@ import Error404 from './pages/Error404/Error404';
 import HousingSheet from './pages/Housing-Sheet/Housing-Sheet';
 import About from './pages/About/About';
 
+import Header from './components/Header/Header';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
+
+      <Header/>
 
       <Routes>
 
