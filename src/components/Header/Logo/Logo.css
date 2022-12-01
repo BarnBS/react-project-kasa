@@ -1,0 +1,15 @@
+.logo {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.logo img{
+    width: 50%;
+    min-width: 30px;
+    height: auto;
+}
+
+.house_logo {
+    position: relative;
+    top:5px;
+}
