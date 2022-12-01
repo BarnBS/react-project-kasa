@@ -10,6 +10,8 @@
   display: flex;
   flex-direction: column;
   background-color:pink;
+
+  min-height: 100vh;
 }
 
 .section1 {
