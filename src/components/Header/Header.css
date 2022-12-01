@@ -9,7 +9,7 @@ header {
     margin-bottom: 20px;
 }
 
-@media (min-width:500px) {
+@media (min-width:400px) {
     header {
         margin-right: 40px;
         margin-left: 40px;
