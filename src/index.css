@@ -6,17 +6,14 @@
   padding: 0;
 }
 
+body {
+  overflow: hidden;
+}
+
 #root {
   display: flex;
   flex-direction: column;
   /* background-color:pink; */
   min-height: 100vh;
   font-family: Montserrat;
-}
-
-.section1 {
-  min-height: 100%;
-  margin-bottom: 20%;
-  margin-left: 100px;
-  margin-right: 100px;
 }

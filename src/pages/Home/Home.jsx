@@ -1,12 +1,14 @@
 import React from "react";
 
+import "../../components/Banner/Banner"
+import Banner from "../../components/Banner/Banner";
+
+import "./Home.css"
+
 function Home () {
-    return <section className="section1">
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi architecto totam commodi rem vel accusamus esse optio aperiam facere vitae quisquam dolore omnis numquam, illo magni consectetur, maiores sunt tempora modi in dignissimos blanditiis ipsam non? Laboriosam quae facere consequuntur rem iusto delectus molestiae laudantium fugiat iure quas temporibus esse tempora, itaque consequatur velit? Enim, ratione. Modi eius, rem assumenda voluptas quod numquam, necessitatibus reiciendis optio quisquam suscipit animi beatae quo illo aspernatur obcaecati laudantium provident voluptate eaque error sunt mollitia minima molestiae blanditiis magnam. Ea impedit quia dolorum facilis quibusdam consequatur dolor. Sit hic dolore accusantium ratione quae alias?</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi architecto totam commodi rem vel accusamus esse optio aperiam facere vitae quisquam dolore omnis numquam, illo magni consectetur, maiores sunt tempora modi in dignissimos blanditiis ipsam non? Laboriosam quae facere consequuntur rem iusto delectus molestiae laudantium fugiat iure quas temporibus esse tempora, itaque consequatur velit? Enim, ratione. Modi eius, rem assumenda voluptas quod numquam, necessitatibus reiciendis optio quisquam suscipit animi beatae quo illo aspernatur obcaecati laudantium provident voluptate eaque error sunt mollitia minima molestiae blanditiis magnam. Ea impedit quia dolorum facilis quibusdam consequatur dolor. Sit hic dolore accusantium ratione quae alias?</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi architecto totam commodi rem vel accusamus esse optio aperiam facere vitae quisquam dolore omnis numquam, illo magni consectetur, maiores sunt tempora modi in dignissimos blanditiis ipsam non? Laboriosam quae facere consequuntur rem iusto delectus molestiae laudantium fugiat iure quas temporibus esse tempora, itaque consequatur velit? Enim, ratione. Modi eius, rem assumenda voluptas quod numquam, necessitatibus reiciendis optio quisquam suscipit animi beatae quo illo aspernatur obcaecati laudantium provident voluptate eaque error sunt mollitia minima molestiae blanditiis magnam. Ea impedit quia dolorum facilis quibusdam consequatur dolor. Sit hic dolore accusantium ratione quae alias?</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi architecto totam commodi rem vel accusamus esse optio aperiam facere vitae quisquam dolore omnis numquam, illo magni consectetur, maiores sunt tempora modi in dignissimos blanditiis ipsam non? Laboriosam quae facere consequuntur rem iusto delectus molestiae laudantium fugiat iure quas temporibus esse tempora, itaque consequatur velit? Enim, ratione. Modi eius, rem assumenda voluptas quod numquam, necessitatibus reiciendis optio quisquam suscipit animi beatae quo illo aspernatur obcaecati laudantium provident voluptate eaque error sunt mollitia minima molestiae blanditiis magnam. Ea impedit quia dolorum facilis quibusdam consequatur dolor. Sit hic dolore accusantium ratione quae alias?</div>
-    </section>
+    return <>
+        <Banner/>
+    </>
 }
 
 export default Home

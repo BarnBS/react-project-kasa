@@ -1,0 +1,54 @@
+section > * {
+    z-index: 10;
+    position: relative;
+    color: black;
+}
+
+section p{
+    color: white;
+
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+
+    background-image: url("../../assets/images/IMG.png");
+    background-size:cover;
+    border-radius: 25px;
+
+    height: 200px;
+    width: 100%;
+
+    z-index: 1;
+
+    padding : 50px
+}
+
+
+section p::after{
+    content :"";
+    display: block;
+    position: absolute;
+    top:0;
+    left: 0;
+    background: black;
+    mix-blend-mode: darken;
+    border-radius: 25px;
+    opacity: 0.3;
+
+    z-index: -1;
+
+    height: 100%;
+    width: 100%;
+}
+
+@media (min-width : 470px) {
+    section p{
+        padding-top: 70px;
+    }
+}
+
+@media (min-width : 750px) {
+    section p{
+        padding-top: 80px;
+    }
+}

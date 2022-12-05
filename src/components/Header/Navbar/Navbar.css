@@ -19,7 +19,7 @@ nav a:hover{
     text-decoration: underline;
 }
 
-@media (min-width: 450px) {
+@media (min-width: 400px) {
 
     nav{
         gap : 40px;

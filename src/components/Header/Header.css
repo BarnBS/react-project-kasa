@@ -4,22 +4,22 @@ header {
     align-items: center;
     gap : 15px;
     margin-top: 40px;
-    margin-left: 20px;
+    margin-bottom: 40px;
     margin-right: 20px;
-    margin-bottom: 20px;
-}
-
-@media (min-width:400px) {
+    margin-left: 20px;
+  }
+  
+  
+  @media (min-width:400px) {
     header {
         margin-right: 40px;
         margin-left: 40px;
-        margin-bottom: 50px;
     }
-}
-
-@media (min-width:650px) {
+  }
+  
+  @media (min-width:650px) {
     header {
         margin-right: 100px;
         margin-left: 100px;
     }
-}
+  }
