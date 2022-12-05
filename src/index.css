@@ -6,14 +6,10 @@
   padding: 0;
 }
 
-body {
-  overflow: hidden;
-}
-
 #root {
   display: flex;
   flex-direction: column;
-  /* background-color:pink; */
+  justify-content: center;
   min-height: 100vh;
   font-family: Montserrat;
 }
