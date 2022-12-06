@@ -1,0 +1,14 @@
+.montagneImage {
+    object-fit: cover;
+    border-radius: 25px;
+
+    height:100px;
+    width:100%;
+}
+
+@media (min-width:500px){
+    .montagneImage {
+        height:200px;
+    }
+    
+}

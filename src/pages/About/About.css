@@ -1,0 +1,22 @@
+main{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+@media (min-width:400px) {
+    main {
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+}
+
+@media (min-width:650px) {
+    main {
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+}

@@ -1,10 +1,14 @@
 import React from "react";
 
+import BannerAbout from "../../components/Banner_About_Page/Banner_About";
+
+import "./About.css"
+
 function About () {
 
-    return <>
-        <h1>ABOUT</h1>
-    </>
+    return <main>
+        <BannerAbout/>
+    </main>
 }
 
 export default About
