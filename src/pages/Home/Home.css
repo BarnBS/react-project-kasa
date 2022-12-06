@@ -1,4 +1,4 @@
-main{
+.Home{
     display: flex;
     flex-direction: column;
     gap:40px;
@@ -8,14 +8,14 @@ main{
 }
 
 @media (min-width:400px) {
-    main {
+    .Home {
         margin-right: 40px;
         margin-left: 40px;
     }
 }
 
 @media (min-width:650px) {
-    main {
+    .Home {
         margin-right: 100px;
         margin-left: 100px;
     }

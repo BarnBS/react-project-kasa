@@ -1,21 +1,24 @@
-main{
+.About{
     display: flex;
     flex-direction: column;
-    gap:40px;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
 
     margin-right: 20px;
     margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 @media (min-width:400px) {
-    main {
+    .About {
         margin-right: 40px;
         margin-left: 40px;
     }
 }
 
 @media (min-width:650px) {
-    main {
+    .About {
         margin-right: 100px;
         margin-left: 100px;
     }

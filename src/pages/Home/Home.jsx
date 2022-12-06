@@ -8,7 +8,7 @@ import "./Home.css"
 
 //Returns Home page with Banner and Gallery components
 function Home () {
-    return <main>
+    return <main className="Home">
         <Banner/>
         <Gallery/>
     </main>
