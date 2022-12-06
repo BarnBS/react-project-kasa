@@ -6,6 +6,8 @@ import House_logo from './images_logo/House_logo.png'
 import S_logo from './images_logo/S_logo.png'
 import A_logo from './images_logo/A_logo.png'
  
+
+//Returns logo to be integrated to the header
 function Logo() {
     return (
         <Link to="/">

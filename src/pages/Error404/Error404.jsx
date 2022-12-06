@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 import "./Error404.css"
 
+//returns Error404 page and redirection link to home page
 function Error404 () {
 
     return <>

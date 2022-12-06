@@ -1,3 +1,5 @@
+//This page contains the routing logic for the website.
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {

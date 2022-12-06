@@ -7,6 +7,7 @@ import A_logo from "../Header/Logo/images_logo/A_logo.png"
 
 import "./Footer.css"
 
+//Returns the footer with logo and copyrights claim
 function Footer() {
     return <footer>
         <div>

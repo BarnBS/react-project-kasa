@@ -5,6 +5,7 @@ import Navbar from './Navbar/Navbar';
 
 import "./Header.css"
 
+//Returns header with Logo and Navbar
 function Header () {
     return (
     <header>

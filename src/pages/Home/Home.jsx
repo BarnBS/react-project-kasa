@@ -6,6 +6,7 @@ import Gallery from "../../components/Gallery/Gallery";
 
 import "./Home.css"
 
+//Returns Home page with Banner and Gallery components
 function Home () {
     return <main>
         <Banner/>
