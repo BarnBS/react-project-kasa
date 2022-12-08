@@ -1,6 +1,6 @@
 import React from "react";
 
-import BannerAbout from "../../components/Banner_About_Page/Banner_About";
+import BannerAbout from "../../components/Banner-about-page/Banner_About";
 import UnwrapBtn from "../../components/Unwrap-btn/Unwrap-btn";
 
 import "./About.css"
