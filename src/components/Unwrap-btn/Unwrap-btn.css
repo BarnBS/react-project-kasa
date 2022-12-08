@@ -43,20 +43,14 @@
 
     padding: 15px;
     padding-top: 25px;
-    margin-bottom:10px;
 }
 
 .description-hidden{
-    visibility: hidden;
-    margin-bottom: -70px;
+    display: none;
 }
 
 @media (min-width:500px){
     .description{
         font-size: 15px;
-    }
-    .description-hidden{
-        visibility: hidden;
-        margin-bottom: -20px;
     }
 }
