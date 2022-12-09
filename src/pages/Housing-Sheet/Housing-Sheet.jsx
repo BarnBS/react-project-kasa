@@ -6,23 +6,26 @@ import logements from "../../logements.json"
 
 function Housing_Sheet () {
 
-    const logementsList = Array.from(logements.values());
     const urlList = []
-    for (let i=0; i<logementsList.length; i++) {
+    for (let i=0; i<logements.length; i++) {
         urlList.push(logements[i].id);
     }
 
     let urlParameter = useParams();
     
-    for (let i=0; i < urlList[i].length; i++) {
-        if (urlList.find(idFromList => idFromList === urlParameter.id)) {
-
-            return <>
+    if (urlList.find(idFromList => idFromList === urlParameter.id)) {
+        for (let i=0; i < logements.length; i++) {
+            if (logements[i].id === urlParameter.id) {
                 
-            </>
+            return <>
 
-        }
-        
+                
+
+            </>
+            }
+        }     
+    }
+    else {
         return <>
             <Error404/>
         </>
