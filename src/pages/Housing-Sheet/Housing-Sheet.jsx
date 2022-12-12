@@ -2,7 +2,11 @@ import React from "react";
 import { useParams } from "react-router-dom";
 
 import Error404 from "../Error404/Error404";
+import Carrousel from "../../components/Carrousel/Carrousel";
+
 import logements from "../../logements.json"
+
+import "./Housing-Sheet.css"
 
 function Housing_Sheet () {
 
@@ -17,11 +21,11 @@ function Housing_Sheet () {
         for (let i=0; i < logements.length; i++) {
             if (logements[i].id === urlParameter.id) {
                 
-            return <>
+            return <section className="Housing-Sheet">
 
-                
+                <Carrousel images={logements[i].pictures}/>
 
-            </>
+            </section>
             }
         }     
     }
