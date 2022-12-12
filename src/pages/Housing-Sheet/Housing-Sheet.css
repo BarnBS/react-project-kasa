@@ -6,6 +6,12 @@
     margin-left: 20px;
 }
 
+.Housing-Sheet h1 {
+    color : #FF6060;
+    font-size : 20px;
+    font-weight: 500;
+}
+
 @media (min-width:400px) {
     .Housing-Sheet {
         margin-right: 40px;
