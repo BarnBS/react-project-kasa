@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 
 import Error404 from "../Error404/Error404";
 import Carrousel from "../../components/Carrousel/Carrousel";
+import Tag from "../../components/Tag/Tag";
 
 import logements from "../../logements.json"
 
@@ -24,7 +25,23 @@ function Housing_Sheet () {
             return <section className="Housing-Sheet">
 
                 <Carrousel images={logements[i].pictures}/>
-                <h1>{logements[i].title}</h1>
+                <div>
+                    <h1>{logements[i].title}</h1>
+                    <p className="location">{logements[i].location}</p>
+                </div>
+                <div className="Tags">
+                {
+                    logements[i].tags.map( tag => {
+                        return <>
+                            <Tag tag={tag}/>
+                        </>
+                    })
+                }
+                </div>
+                <div>
+                    <p>{logements[i].host.name}</p>
+                    {/* ratings */}
+                </div>
 
             </section>
             }
