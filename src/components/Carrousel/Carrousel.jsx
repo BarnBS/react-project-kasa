@@ -41,8 +41,8 @@ function Carrousel (props) {
         </>
         <div className="carrousel">
             <img className="imageCarrousel" key={images.indexOf(images[counter])} src={images[counter]} alt="" /> 
-            <p className="pageNumber">{images.indexOf(images[counter])+1}/{images.length}</p>
         </div>
+        <p className="pageNumber">{images.indexOf(images[counter])+1}/{images.length}</p>
         <>
             <img onClick={increment} className={classNameRight} src={rightBtn} alt="Button to slide to the right" />
         </>

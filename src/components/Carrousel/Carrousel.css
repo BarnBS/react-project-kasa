@@ -18,10 +18,10 @@
 }
 
 .pageNumber {
-    position: absolute;
-    top : 32%;
-
+    align-self: center;
+    position: relative;
     color: white;
+    bottom : 80px;
 
     background-color: black;
     border-radius: 10px;
@@ -70,13 +70,11 @@
         width: 50px;
         height : 70px;
     }
-
-    .pageNumber {
-        top : 50%;
-    }
 }
 
-@media (min-width:950px) {
+
+
+@media (min-width:1050px) {
 
     .slideBtn {
         right : 85%;
