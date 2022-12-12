@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import Error404 from "../Error404/Error404";
 import Carrousel from "../../components/Carrousel/Carrousel";
 import Tag from "../../components/Tag/Tag";
+import Host from "../../components/Host/Host";
 
 import logements from "../../logements.json"
 
@@ -38,9 +39,8 @@ function Housing_Sheet () {
                     })
                 }
                 </div>
-                <div>
-                    <p>{logements[i].host.name}</p>
-                    {/* ratings */}
+                <div className="host-and-ratings">
+                    <Host host = {logements[i].host.name} profile_picture = {logements[i].host.picture}/>
                 </div>
 
             </section>

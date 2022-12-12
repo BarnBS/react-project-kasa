@@ -1,0 +1,22 @@
+.host{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.host p{
+    color: #FF6060;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    width: 40px;
+
+    margin-right: 15px;
+}
+
+.host img{
+    width: 40px;
+    border-radius: 25px;
+}
