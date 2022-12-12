@@ -24,6 +24,7 @@ function Housing_Sheet () {
             return <section className="Housing-Sheet">
 
                 <Carrousel images={logements[i].pictures}/>
+                <h1>{logements[i].title}</h1>
 
             </section>
             }
