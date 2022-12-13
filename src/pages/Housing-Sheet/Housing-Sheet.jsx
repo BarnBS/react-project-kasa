@@ -13,7 +13,7 @@ import "./Housing-Sheet.css"
 
 function Housing_Sheet () {
 
-    const urlList = []
+    let urlList = [];
     for (let i=0; i<logements.length; i++) {
         urlList.push(logements[i].id);
     }
