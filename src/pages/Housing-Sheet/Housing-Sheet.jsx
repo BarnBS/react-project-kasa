@@ -42,7 +42,7 @@ function Housing_Sheet () {
                 </div>
                 <div className="host-and-ratings">
                     <Host host = {logements[i].host.name} profile_picture = {logements[i].host.picture}/>
-                    <Rating stars = {logements[i].rating}/>
+                    <Rating rating = {logements[i].rating}/>
                 </div>
 
             </section>
