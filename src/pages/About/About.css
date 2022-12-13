@@ -32,11 +32,6 @@
     width : 100%;
 }
 
-.Unwrap-div{
-    width: 100%;
-    margin-bottom : 20px;
-}
-
 @media (min-width:779px){
     .Unwrap-section{
         width : 80%;

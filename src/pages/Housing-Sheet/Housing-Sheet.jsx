@@ -6,6 +6,7 @@ import Carrousel from "../../components/Carrousel/Carrousel";
 import Tag from "../../components/Tag/Tag";
 import Host from "../../components/Host/Host";
 import Rating from "../../components/Rating/Rating";
+import UnwrapBtn from "../../components/Unwrap-btn/Unwrap-btn";
 
 import logements from "../../logements.json"
 
@@ -31,7 +32,7 @@ function Housing_Sheet () {
                     <h1>{logements[i].title}</h1>
                     <p className="location">{logements[i].location}</p>
                 </div>
-                <div className="Tags">
+                <div className="tags">
                 {
                     logements[i].tags.map( tag => {
                         return <>
@@ -43,6 +44,10 @@ function Housing_Sheet () {
                 <div className="host-and-ratings">
                     <Host host = {logements[i].host.name} profile_picture = {logements[i].host.picture}/>
                     <Rating rating = {logements[i].rating}/>
+                </div>
+                <div className="unwrap-btns">
+                    <UnwrapBtn/>
+                    <UnwrapBtn/>
                 </div>
 
             </section>

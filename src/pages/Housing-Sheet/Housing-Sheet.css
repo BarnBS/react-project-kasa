@@ -21,12 +21,18 @@
     margin-bottom: 15px;
 }
 
-.Tags {
+.tags {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 
     margin-bottom: 10px;
+}
+
+.unwrap-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 @media (min-width:400px) {
