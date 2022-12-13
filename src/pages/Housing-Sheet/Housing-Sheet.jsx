@@ -46,8 +46,14 @@ function Housing_Sheet () {
                     <Rating rating = {logements[i].rating}/>
                 </div>
                 <div className="unwrap-btns">
-                    <UnwrapBtn/>
-                    <UnwrapBtn/>
+                    <UnwrapBtn title="Description" description={logements[i].description}/>
+                    <UnwrapBtn title="Equipements" description={logements[i].equipments.map(equipement => {
+                        return <>
+                            <ul>
+                                {equipement}
+                            </ul>
+                        </>
+                    })}/>
                 </div>
 
             </section>

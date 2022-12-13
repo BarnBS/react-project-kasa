@@ -26,6 +26,7 @@
     flex-direction: row;
     flex-wrap: wrap;
 
+    margin-right: 70px;
     margin-bottom: 10px;
 }
 
@@ -35,6 +36,10 @@
     justify-content: space-between;
 }
 
+.unwrap-btns p {
+    height : auto;
+}
+
 @media (min-width:400px) {
     .Housing-Sheet {
         margin-right: 40px;
@@ -42,9 +47,32 @@
     }
 }
 
-@media (min-width:650px) {
+@media (min-width:750px) {
     .Housing-Sheet {
         margin-right: 100px;
         margin-left: 100px;
+    }
+}
+
+@media (min-width:780px) {
+    .Housing-Sheet h1 {
+        font-size : 24px;
+    }
+
+    .location{
+        font-size : 18px;
+    }
+
+    .host-and-ratings {
+        margin-bottom: -70px;
+    }
+
+    .unwrap-btns {
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .unwrap-btns p {
+        height : 200px;
     }
 }

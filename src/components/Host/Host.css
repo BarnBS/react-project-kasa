@@ -3,6 +3,9 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+
+    position: relative;
+    bottom: 10px;
 }
 
 .host p{
@@ -21,4 +24,20 @@
     border-radius: 25px;
 
     margin-left: 10px;
+}
+
+@media (min-width:780px) {
+    .host{
+        bottom : 120px;
+    }
+
+    .host p{
+        font-size: 14px;
+        margin-right: 18px;
+    }
+
+    .host img{
+        width: 60px;
+        margin-left: 15px;
+    }
 }

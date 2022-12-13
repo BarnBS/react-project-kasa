@@ -10,3 +10,16 @@
 .uncoloredStar {
     filter: invert(50%);
 }
+
+@media (min-width:780px) {
+    .rating {
+        display: flex;
+        justify-content: flex-end;
+
+        bottom : 110px;
+    }
+    
+    .star {
+        width: 20px;
+    }
+}
