@@ -2,6 +2,7 @@ import star from "./star.png"
 
 import "./Rating.css"
 
+//Returns the rating stars/5
 function Rating(props){
     const {rating} = props;
     let coloredStarsList = [];

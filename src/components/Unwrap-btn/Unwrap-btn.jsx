@@ -18,6 +18,7 @@ function UnwrapBtn (props) {
         setOpen (!open);
     };
 
+    //To reverse the logo button depending on the state (open or !open)
     if (!open) {
         className = "description-hidden"
         reverseImg = ""
