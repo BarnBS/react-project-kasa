@@ -6,21 +6,6 @@
     margin-left: 20px;
 }
 
-.Housing-Sheet h1 {
-    color : #FF6060;
-    font-size : 18px;
-    font-weight: 500;
-
-    margin-bottom: 10px;
-}
-
-.location{
-    color : #FF6060;
-    font-size : 14px;
-
-    margin-bottom: 15px;
-}
-
 .tags {
     display: flex;
     flex-direction: row;

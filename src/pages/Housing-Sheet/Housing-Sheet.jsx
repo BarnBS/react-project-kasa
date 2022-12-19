@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 
 import Error404 from "../Error404/Error404";
 import Carrousel from "../../components/Carrousel/Carrousel";
+import HousingTitle from "../../components/Housing-title/Housing-title";
 import Tag from "../../components/Tag/Tag";
 import Host from "../../components/Host/Host";
 import Rating from "../../components/Rating/Rating";
@@ -12,26 +13,26 @@ import logements from "../../logements.json"
 
 import "./Housing-Sheet.css"
 
-function Housing_Sheet () {
-
+function listHousingIds() {
     let urlList = [];
     for (let i=0; i<logements.length; i++) {
         urlList.push(logements[i].id);
     }
+    return urlList;
+}
+
+function Housing_Sheet () {
 
     let urlParameter = useParams();
     
-    if (urlList.find(idFromList => idFromList === urlParameter.id)) {
+    if (listHousingIds().find(idFromList => idFromList === urlParameter.id)) {
         for (let i=0; i < logements.length; i++) {
             if (logements[i].id === urlParameter.id) {
                 
             return <section className="Housing-Sheet">
 
                 <Carrousel images={logements[i].pictures}/>
-                <div>
-                    <h1>{logements[i].title}</h1>
-                    <p className="location">{logements[i].location}</p>
-                </div>
+                <HousingTitle title = {logements[i].title} location = {logements[i].location}/> 
                 <div className="tags">
                 {
                     logements[i].tags.map( tag => {
