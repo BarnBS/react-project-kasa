@@ -1,6 +1,9 @@
 @import "./styles/fonts.css";
 @import "./styles/variables.scss";
 
+
+//Layout
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,7 +18,6 @@
   font-family: Montserrat;
 }
 
-//Layout
 @import "./components/Header/Header.scss";
 @import "./components/Footer/Footer.scss";
 
