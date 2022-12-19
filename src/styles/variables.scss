@@ -1,0 +1,9 @@
+$main-color : #FF6060;
+
+@mixin main-color {
+    color : $main-color
+}
+
+@mixin background-main-color {
+    background: $main-color;
+}

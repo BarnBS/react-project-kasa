@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import "./Logo.css"
 
 import K_logo from './images_logo/K_logo.png'
 import House_logo from './images_logo/House_logo.png'

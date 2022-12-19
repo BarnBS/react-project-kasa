@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import "./Housing-card.css";
 
 //Returns a clickable card with an image and a title
 function HousingCard(props) {

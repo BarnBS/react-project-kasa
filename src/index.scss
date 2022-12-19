@@ -1,0 +1,39 @@
+@import "./styles/fonts.css";
+@import "./styles/variables.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Montserrat;
+}
+
+//Layout
+@import "./components/Header/Header.scss";
+@import "./components/Footer/Footer.scss";
+
+//Home page
+@import "./components/Banner/Banner.scss";
+@import "./components/Gallery/Gallery.scss";
+@import "./components/Housing-card/Housing-card.scss";
+
+//About page
+@import "./components/Banner-about-page/Banner_About.scss";
+
+//Housing page
+@import "./components/Carrousel/Carrousel.scss";
+@import "./components/Host/Host.scss";
+@import "./components/Housing-title/Housing-title.scss";
+@import "./components/Rating/Rating.scss";
+@import "./components/Tag/Tag.scss";
+@import "./components/Unwrap-btn/Unwrap-btn.scss";
+
+//Error404 page
+@import "./pages/Error404/Error404.scss";

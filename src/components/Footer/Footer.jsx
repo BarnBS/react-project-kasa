@@ -5,8 +5,6 @@ import House_logo from "../Header/Logo/images_logo/House_logo.png"
 import S_logo from "../Header/Logo/images_logo/S_logo.png"
 import A_logo from "../Header/Logo/images_logo/A_logo.png"
 
-import "./Footer.css"
-
 //Returns the footer with logo and copyrights claim
 function Footer() {
     return <footer>

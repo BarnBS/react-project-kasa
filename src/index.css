@@ -1,5 +1,4 @@
 @import "./styles/fonts.css";
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,3 +12,484 @@
   min-height: 100vh;
   font-family: Montserrat;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+@media (min-width: 400px) {
+  header {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+}
+@media (min-width: 750px) {
+  header {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+}
+nav {
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  gap: 20px;
+  white-space: nowrap;
+}
+
+nav a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 142.6%;
+  text-decoration: none;
+  color: #FF6060;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 400px) {
+  nav {
+    gap: 40px;
+  }
+  nav a {
+    font-size: 20px;
+  }
+}
+.logo {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.logo img {
+  width: 20%;
+  min-width: 20px;
+  height: auto;
+}
+
+.house_logo {
+  position: relative;
+  top: 5px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  margin-top: auto;
+  color: white;
+  background-color: black;
+}
+
+footer img {
+  width: 25px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+}
+
+.Banner > * {
+  z-index: 10;
+  position: relative;
+  color: black;
+}
+
+.Banner p {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  background-image: url("./assets/images/IMG.png");
+  background-size: cover;
+  border-radius: 25px;
+  height: 100px;
+  width: 100%;
+  z-index: 1;
+  padding: 30px;
+}
+
+.Banner p::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  mix-blend-mode: darken;
+  border-radius: 25px;
+  opacity: 0.3;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 470px) {
+  .Banner p {
+    height: 200px;
+    font-size: 30px;
+    padding-top: 70px;
+  }
+}
+@media (min-width: 750px) {
+  .Banner p {
+    padding-top: 80px;
+  }
+}
+.Gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 950px) {
+  .Gallery {
+    gap: 20;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+.Housing-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: linear-gradient(180deg, #FF6060 0%, black 100%);
+  border-radius: 10px;
+  min-height: 340px;
+  max-width: 340px;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.Housing-card::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  border-radius: 10px;
+  background: #FF6060;
+  opacity: 0.8;
+  height: 100%;
+  z-index: -1;
+}
+
+.Housing-card img {
+  object-fit: cover;
+  width: 90%;
+  height: 70%;
+  border-radius: 10px;
+}
+
+.Housing-card h2 {
+  align-self: flex-start;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 15px;
+  padding-bottom: 0;
+}
+
+.montagneImage {
+  object-fit: cover;
+  border-radius: 25px;
+  height: 200px;
+  width: 100%;
+}
+
+.carrousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.imageCarrousel {
+  object-fit: cover;
+  border-radius: 10px;
+  width: 100%;
+  height: 250px;
+}
+
+.imageSlide {
+  transform: translateX(50px);
+  transition: transform 0.5s;
+}
+
+.pageNumber {
+  align-self: center;
+  position: relative;
+  color: white;
+  bottom: 60px;
+  background-color: black;
+  border-radius: 10px;
+  opacity: 0.3;
+  padding: 5px;
+  margin-bottom: -10px;
+}
+
+.slideBtn {
+  cursor: pointer;
+  z-index: 100;
+  position: absolute;
+  top: 220px;
+  right: 80%;
+  background-color: black;
+  border-radius: 10px;
+  opacity: 0.4;
+  padding: 10px;
+  width: 30px;
+  height: 40px;
+}
+
+.right {
+  left: 80%;
+}
+
+.hide {
+  display: none;
+}
+
+@media (min-width: 650px) {
+  .imageCarrousel {
+    height: 415px;
+  }
+  .slideBtn {
+    top: 300px;
+    right: 75%;
+    width: 50px;
+    height: 70px;
+  }
+  .right {
+    left: 75%;
+  }
+}
+@media (min-width: 1050px) {
+  .slideBtn {
+    right: 85%;
+  }
+  .right {
+    left: 85%;
+  }
+}
+.host {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  bottom: 10px;
+}
+
+.host p {
+  color: #FF6060;
+  font-size: 12px;
+  font-weight: 500;
+  width: 40px;
+  margin-right: 15px;
+}
+
+.host img {
+  width: 40px;
+  border-radius: 25px;
+  margin-left: 10px;
+}
+
+@media (min-width: 780px) {
+  .host {
+    bottom: 120px;
+  }
+  .host p {
+    font-size: 14px;
+    margin-right: 18px;
+  }
+  .host img {
+    width: 60px;
+    margin-left: 15px;
+  }
+}
+.title {
+  color: #FF6060;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.location {
+  color: #FF6060;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.rating {
+  position: relative;
+  bottom: 30px;
+}
+
+.star {
+  width: 15px;
+}
+
+.uncoloredStar {
+  filter: invert(50%);
+}
+
+@media (min-width: 780px) {
+  .rating {
+    display: flex;
+    justify-content: flex-end;
+    bottom: 110px;
+  }
+  .star {
+    width: 20px;
+  }
+}
+.tag-unit {
+  white-space: nowrap;
+  color: white;
+  font-size: 10px;
+  font-weight: 500;
+  border-radius: 25px;
+  background: #FF6060;
+  padding: 3px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 10px;
+  margin-left: 0;
+  margin-top: -5px;
+}
+
+@media (min-width: 780px) {
+  .tag-unit {
+    font-size: 12px;
+  }
+}
+.Unwrap-div {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.unwrap-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 5px;
+  background: #FF6060;
+  height: 40px;
+  width: 100%;
+  font-size: 12px;
+}
+
+.unwrap-btn:hover {
+  cursor: pointer;
+}
+
+.unwrap-btn h2 {
+  font-weight: 400;
+  color: white;
+  margin-left: 20px;
+}
+
+.unwrap-btn img {
+  width: 20px;
+  height: 10px;
+  margin-right: 20px;
+}
+
+.reverseImg {
+  transform: rotate(180deg);
+}
+
+.description {
+  color: #FF6060;
+  background-color: #F7F7F7;
+  font-size: 13px;
+  padding: 15px;
+  padding-top: 25px;
+}
+
+.description-hidden {
+  display: none;
+}
+
+@media (min-width: 500px) {
+  .description {
+    font-size: 15px;
+  }
+}
+.Error404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FF6060;
+  margin-top: 150px;
+}
+
+.Error404 h1 {
+  font-size: 98px;
+}
+
+.Error404 p {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.Error404 a {
+  text-decoration: none;
+  color: #FF6060;
+  margin-top: 100px;
+}
+
+.Error404 a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 750px) {
+  .Error404 {
+    margin-top: 50px;
+  }
+  .Error404 h1 {
+    font-size: 300px;
+  }
+  .Error404 a {
+    padding-bottom: 100px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -2,7 +2,6 @@ import {useState} from "react";
 
 import leftBtn from "./left-slide.png";
 import rightBtn from "./right-slide.png";
-import "./Carrousel.css";
 
 //Carrousel d'images
 function Carrousel (props) {

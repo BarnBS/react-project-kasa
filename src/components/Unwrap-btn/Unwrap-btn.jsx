@@ -2,8 +2,6 @@ import { useState } from "react";
 
 import unwrap_logo from "./unwrap_logo.png"
 
-import "./Unwrap-btn.css"
-
 // Unwrap the Description by clicking the Title division
 function UnwrapBtn (props) {
     const {title, description} = props;

@@ -1,5 +1,3 @@
-import "./Housing-title.css"
-
 function HousingTitle(props) {
 
 const {title, location} = props;

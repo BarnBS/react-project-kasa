@@ -1,5 +1,3 @@
-import "./Banner.css";
-
 //Returns home page's banner
 function Banner() {
     return <section className="Banner">

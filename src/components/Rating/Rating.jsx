@@ -1,7 +1,5 @@
 import star from "./star.png"
 
-import "./Rating.css"
-
 //Count the number of colored stars and add to a list each star to iterate on it later
 function coloredStars(prop){
     let coloredStarsList = [];

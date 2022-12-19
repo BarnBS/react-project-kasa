@@ -1,5 +1,3 @@
-import "./Tag.css"
-
 //Returns tags for each housing
 function Tag(props) {
     const {tag} = props

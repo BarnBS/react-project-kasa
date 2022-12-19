@@ -6,7 +6,7 @@
     font-weight: 500;
 
     border-radius : 25px;
-    background-color:#FF6060;
+    @include background-main-color;
 
     padding: 3px;
     padding-left: 25px;

@@ -9,7 +9,7 @@
 }
 
 .host p{
-    color: #FF6060;
+    @include main-color;
 
     font-size: 12px;
     font-weight: 500;

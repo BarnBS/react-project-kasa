@@ -12,7 +12,7 @@
     text-decoration: none;
     
     border-radius: 5px;
-    background-color: #FF6060;
+    @include background-main-color;
     height: 40px;
     width: 100%;
     font-size: 12px;
@@ -42,7 +42,7 @@
 
 
 .description{
-    color:#FF6060;
+    @include main-color;
     background-color: #F7F7F7;
     font-size: 13px;
 

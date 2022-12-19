@@ -1,8 +1,5 @@
 import montagnes from  "../../assets/images/montagnes.png";
 
-import "./Bannes_About.css"
-
-
 //Returns a Banner for About page
 function BannerAbout () {
     return <>
