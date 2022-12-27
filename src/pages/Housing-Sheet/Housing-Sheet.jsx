@@ -22,10 +22,53 @@ function listHousingIds() {
     return urlList;
 }
 
-// return the housing at Integer "index" from the "logements" datas
-function housing(index) {
-    return logements[index]
+//Returns each tag using the Tags component with a mapping method
+function tagTemplate(index) {
+    return <div className="tags">
+    {
+        logements[index].tags.map( tag => {
+            return <>
+                <Tag tag={tag}/>
+            </>
+        })
+    }
+    </div>
 }
+
+//Returns template for host and rating components
+function hostAndRatingTemplate(index){
+    return <div className="host-and-ratings">
+        <Host host = {logements[index].host.name} profile_picture = {logements[index].host.picture}/>
+        <Rating rating = {logements[index].rating}/>
+    </div>
+}
+
+//Returns template for the "unwrap" buttons
+function unwrapButtonsTemplate(index){
+    return <div className="unwrap-btns">
+            <UnwrapBtn title="Description" description={logements[index].description}/>
+            <UnwrapBtn title="Equipements" description={logements[index].equipments.map(equipement => {
+                return <>
+                    <ul>
+                        {equipement}
+                    </ul>
+                </>
+            })}/>
+    </div>
+}
+
+//Returns the template for the housing sheet
+function housingTemplate(index) {
+    return <section className="Housing-Sheet">
+            <Carrousel images={logements[index].pictures}/>
+            <HousingTitle title = {logements[index].title} location = {logements[index].location}/> 
+            {tagTemplate(index)}
+            {hostAndRatingTemplate(index)}
+            {unwrapButtonsTemplate(index)}
+    </section>
+}
+
+
 
 //Returns a page-component that display every component of a housing
 function Housing_Sheet () {
@@ -35,37 +78,8 @@ function Housing_Sheet () {
     //If the id in the url doesn't match an id from the list of Ids then return Error404, else display the housing corresponding the id
     if (listHousingIds().find(idFromList => idFromList === urlParameter.id)) {
         for (let i=0; i < logements.length; i++) {
-            if (housing(i).id === urlParameter.id) {
-                
-            return <section className="Housing-Sheet">
-
-                <Carrousel images={housing(i).pictures}/>
-                <HousingTitle title = {housing(i).title} location = {housing(i).location}/> 
-                <div className="tags">
-                {
-                    housing(i).tags.map( tag => {
-                        return <>
-                            <Tag tag={tag}/>
-                        </>
-                    })
-                }
-                </div>
-                <div className="host-and-ratings">
-                    <Host host = {housing(i).host.name} profile_picture = {housing(i).host.picture}/>
-                    <Rating rating = {housing(i).rating}/>
-                </div>
-                <div className="unwrap-btns">
-                    <UnwrapBtn title="Description" description={housing(i).description}/>
-                    <UnwrapBtn title="Equipements" description={housing(i).equipments.map(equipement => {
-                        return <>
-                            <ul>
-                                {equipement}
-                            </ul>
-                        </>
-                    })}/>
-                </div>
-
-            </section>
+            if (logements[i].id === urlParameter.id) {      
+                return housingTemplate(i);
             }
         }     
     }
