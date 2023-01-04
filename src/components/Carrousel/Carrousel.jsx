@@ -39,6 +39,7 @@ function Carrousel (props) {
         }, "500")
     }
 
+    //Add animations to give a slide effect to the images
     useEffect(() => {
         document.querySelector(".slideBtn").addEventListener("click", () => {
             document.querySelector(".imageCarrousel").style.transform = "translateX(1500px)";
