@@ -6,6 +6,17 @@
     margin-left: 20px;
 }
 
+
+.preload {
+    width: 0;
+    height: 0;
+}
+
+.preload img {
+    width: 0;
+    height: 0;
+}
+
 .tags {
     display: flex;
     flex-direction: row;
