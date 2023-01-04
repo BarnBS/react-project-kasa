@@ -26,7 +26,9 @@ function UnwrapBtn (props) {
         <div onClick={changeState} className="unwrap-btn">
             <h2>{title}</h2> <img className={reverseImg} src={unwrap_logo} alt="unwrap button" />
         </div>
-        <p className={className}>{description}</p>
+        <div className ="overflow">
+            <p className={className}>{description}</p>
+        </div>
     </div>
 }
 

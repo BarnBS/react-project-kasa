@@ -244,11 +244,6 @@ a {
   height: 250px;
 }
 
-.imageSlide {
-  transform: translateX(50px);
-  transition: transform 0.5s;
-}
-
 .pageNumber {
   align-self: center;
   position: relative;
@@ -400,6 +395,7 @@ a {
 .Unwrap-div {
   width: 100%;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 
 .unwrap-btn {
@@ -435,16 +431,44 @@ a {
   transform: rotate(180deg);
 }
 
+.overflow {
+  overflow: hidden;
+}
+
 .description {
   color: #FF6060;
   background-color: #F7F7F7;
   font-size: 13px;
+  animation: 600ms open;
   padding: 15px;
   padding-top: 25px;
 }
+@keyframes open {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 
 .description-hidden {
-  display: none;
+  color: #FF6060;
+  background-color: #F7F7F7;
+  font-size: 13px;
+  animation: 600ms hide forwards;
+  padding: 15px;
+  padding-top: 25px;
+  margin-bottom: -200px;
+}
+@keyframes hide {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-500px);
+    display: none;
+  }
 }
 
 @media (min-width: 500px) {
