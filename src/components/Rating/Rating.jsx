@@ -31,7 +31,7 @@ function Rating(props){
     return <div className="rating">
         {   
             coloredStars(rating).map( coloredStar => {
-                return <img key={coloredStars(rating).indexOf(coloredStar)}  src={star} alt="star used for rating" className="star"/>
+                return <img key={coloredStars(rating).indexOf(coloredStar) + Math.random}  src={star} alt="star used for rating" className="star"/>
             })
         }
 
