@@ -12,10 +12,14 @@
     height : 250px;
 }
 
-.imageSlide{
-    transform: translateX(50px);
-    transition: transform 0.5s;
-}
+// .imageOpacityAnimation {
+//     animation: 0.3s imageOpacity;
+// }
+
+// @keyframes imageOpacity {
+//     from { opacity : 1 };
+//     to { opacity : 0 }
+// };
 
 .pageNumber {
     align-self: center;

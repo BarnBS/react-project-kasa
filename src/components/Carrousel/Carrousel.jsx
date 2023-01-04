@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {useState} from "react";
 
 import leftBtn from "./left-slide.png";
@@ -22,17 +23,35 @@ function Carrousel (props) {
 
     //Incrémente le counter pour changer d'image au carrousel parmis la liste d'images
     function increment() {
-        if (counter < images.length-1){
-            setCounter(counter + 1);
-        }
+        setTimeout(()=> {
+            if (counter < images.length-1){
+                setCounter(counter + 1);
+            }
+        }, "500")
     }
 
     //Décrémente le counter pour changer d'image au carrousel parmis la liste d'images
     function decrement() {
-        if (counter > 0){
-            return setCounter(counter - 1);
-        }
+        setTimeout(()=> {
+            if (counter > 0){
+                return setCounter(counter - 1);
+            }
+        }, "500")
     }
+
+    useEffect(() => {
+        document.querySelector(".slideBtn").addEventListener("click", () => {
+            document.querySelector(".imageCarrousel").style.transform = "translateX(1500px)";
+            document.querySelector(".imageCarrousel").style.transition = "transform 1000ms";
+            document.querySelector(".imageCarrousel").style.opacity = "0.3";
+        })
+
+        document.querySelector(".right").addEventListener("click", () => {
+            document.querySelector(".imageCarrousel").style.transform = "translateX(-1500px)";
+            document.querySelector(".imageCarrousel").style.transition = "transform 1000ms";
+            document.querySelector(".imageCarrousel").style.opacity = "0.3";
+        })
+    });
 
     return(<>
         <>

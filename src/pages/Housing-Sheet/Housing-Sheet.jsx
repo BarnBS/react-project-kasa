@@ -26,6 +26,12 @@ function listHousingIds() {
     return urlList;
 }
 
+function preloadImage(index) {
+    logements[index].pictures.map(image => {
+        return <img src={image} key={Math.random()} alt=""/>
+    })
+};
+
 //Returns each tag using the Tags component with a mapping method
 function tagTemplate(index) {
     return <div className="tags">
@@ -60,12 +66,13 @@ function unwrapButtonsTemplate(index){
 //Returns the template for the housing sheet
 function housingTemplate(index) {
     return <>
-            {/*Preload des images du carrousel*/}
-            <section className="preload">
+    {preloadImage(index)}
+        {/* Preload des images du carrousel
+        <section className="preload">
             {logements[index].pictures.map(image => {
                 return <img src={image} key={Math.random()} alt=""/>
             })}
-        </section>
+        </section> */}
         
         <section className="Housing-Sheet">
                 <Carrousel images={logements[index].pictures}/>
