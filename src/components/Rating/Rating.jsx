@@ -31,13 +31,13 @@ function Rating(props){
     return <div className="rating">
         {   
             coloredStars(rating).map( coloredStar => {
-                return <img key={coloredStars(rating).indexOf(coloredStar) + Math.random}  src={star} alt="star used for rating" className="star"/>
+                return <img key={coloredStars(rating).indexOf(coloredStar) + Math.random()}  src={star} alt="star used for rating" className="star"/>
             })
         }
 
         {
             notColoredStars(rating).map( notColoredStar => {
-                return <img key={notColoredStars(rating).indexOf(notColoredStar) + Math.random}  src={star} alt="star used for rating" className="star uncoloredStar"/>
+                return <img key={notColoredStars(rating).indexOf(notColoredStar) + Math.random()}  src={star} alt="star used for rating" className="star uncoloredStar"/>
             })
         }
     </div>
